@@ -2,7 +2,7 @@ import React from 'react';
 import { IconButton } from '@mui/material';
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 import { useNavigate } from 'react-router-dom';
-import { APPCOLORS } from './ProductList'; // Asegúrate de que los colores estén definidos
+import { APPCOLORS } from '../utils/Constants';
 
 const BackButton: React.FC = () => {
   const navigate = useNavigate();
