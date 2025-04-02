@@ -1,0 +1,45 @@
+{
+  "name": "my-stock-app",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "lint": "eslint .",
+    "preview": "vite preview",
+    "esbuilddev": "esbuild --bundle src/main.tsx --outdir=dist --servedir=dist --sourcemap --watch",
+    "esbuild": "esbuild src/main.tsx --bundle --minify --sourcemap --outfile=dist/index.js",
+    "serve": "http-server dist -p 3000",
+    "clean": "rm -rf dist"
+  },
+  "dependencies": {
+    "@mui/icons-material": "^7.0.1",
+    "@reduxjs/toolkit": "^2.6.1",
+    "esbuild": "^0.25.2",
+    "file-saver": "^2.0.5",
+    "http-server": "^14.1.1",
+    "jspdf": "^3.0.1",
+    "jspdf-autotable": "^5.0.2",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-redux": "^9.2.0",
+    "react-router-dom": "^7.4.1",
+    "xlsx": "^0.18.5"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.21.0",
+    "@types/file-saver": "^2.0.7",
+    "@types/react": "^19.0.10",
+    "@types/react-dom": "^19.0.4",
+    "@types/react-router-dom": "^5.3.3",
+    "@vitejs/plugin-react": "^4.3.4",
+    "eslint": "^9.21.0",
+    "eslint-plugin-react-hooks": "^5.1.0",
+    "eslint-plugin-react-refresh": "^0.4.19",
+    "globals": "^15.15.0",
+    "typescript": "~5.7.2",
+    "typescript-eslint": "^8.24.1",
+    "vite": "^6.2.0"
+  }
+}
